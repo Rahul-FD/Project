@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator IN JS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            margin: 10px 80px;
+        }
+        .colum{
+            width: 340px;
+            height: 350px;
+            background-color: rgb(156, 157, 160);
+            color: black;
+            border-radius: 10px;
+            margin: 50px 35%;
+        }
+        input{
+            width: 275px;
+            height: 30px;
+            margin:  10PX 28px;
+        }
+        select,button{
+            margin: 10px 160px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="colum">
+        <h1>Calculater</h1>
+        <input type="text" name="first" id="first" step="any" >
+        <select name="" id="ope">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="#">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="second" id="second" step="any" >
+        <br/>
+        <button onclick="cal()">Add</button>
+        <input type="text" id="res" readonly="">
+    </div>
+    <script>
+        function cal(){
+            var opr1 = document.getElementById('first').value;
+            var opr2 = document.getElementById('second').value;
+            var ope = document.getElementById('ope').value;
+            if (ope == '+'){
+                var res = parseInt(opr1) + parseInt(opr2);
+            }
+            if (ope == '-'){
+                var res = parseInt(opr1) - parseInt(opr2);
+            }
+            if (ope == '#'){
+                var res = parseInt(opr1) * parseInt(opr2);
+            }
+            if (ope == '/'){
+                var res = parseInt(opr1) / parseInt(opr2);
+            }
+            document.getElementById('res').value = res;
+        }
+    </script>
+</body>
+</html>

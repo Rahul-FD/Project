@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+
+.mix{
+    width: 100%;
+    filter: brightness(0.5);
+}
+#nav{
+    width: 100%;
+    display: flex;
+    gap: 48%;
+    position: absolute;
+    top: 10px;
+}
+.logo{
+    width: 230px;
+    margin-left: 150px;
+    background: transparent;
+}
+.right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.right .language{
+    margin-top: 10px;
+    background-image: transparent;
+}
+.right button{
+    width: 120px;
+    display: flex;
+    background-color: transparent;
+    color: white;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+} 
+select{
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+.signup h4{
+    width: 100px;
+    padding: 10px;
+    border: 1pa solid black;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+.content{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    color: white;
+}
+h1{
+    width: 95%;
+    padding: 15px;
+    font-size: 65px;
+    text-align: center;
+}
+h4{
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+h5{
+    padding: 15px;
+    width: 60%;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 185px;
+}
+.fom{
+    display: flex;
+    gap: 10px;
+    margin-left: 360px;
+    outline: 0;
+    border: 0;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+.box-1,.box-2,.box-4,.box-5{
+    background-color: black;
+    color: white;
+    display: flex;
+    margin-top: 5px;
+}
+.phone{
+    position: relative;
+}
+h2{
+    width: 100%;
+    padding: 15px;
+    font-size: 55px;
+    text-align: center;  
+}
+.text{
+    margin-top: 100px;
+    width: 50%;
+}
+.box-3{
+    width: 27%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 1750px;
+    left: 120px;
+}
+.thing{
+    width: 50px;
+}
+.contener{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+p{
+    font-size: 20px;
+}
+a{
+    color: rgb(17, 17, 239);
+    text-decoration: none;
+    margin-right: 30px;
+}
+.round{
+    width: 55px;
+    margin-left: 130px;
+}
+.box-6,.box-7{
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+}
+.box-6 input{
+    width: 70%;
+    padding: 20px;
+    margin: 20px 40px;
+    margin-left: 15%;
+}
+.box{
+    margin-right: 70%;
+    display: flex;
+}
+p{
+    text-decoration: underline;
+    margin-top: 6px;
+}
+.fom{
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-7 .fom{
+    gap: 20px;
+    margin-left: 450px;
+}
+.box-7 input{
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-7 button{
+    width: 150px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.language{
+    width: 17px;
+    background-color: transparent;
+}
+.box-8{
+    padding: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+}
+.box-9{
+    margin-left: 100px;
+}
+h3{
+    display: flex;
+    font-size: 25px;
+}
+.table{
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+}
+.box-9 button{
+    width: 130px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.box-9 select{
+    background-color: transparent;
+    color: white;
+    outline: 0;
+    border: 0;
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px;
+}
+h6{
+    font-size: 20px;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Effect In jquery</title>
+</head>
+<body>
+    <h1>Hide Shoe Effect In jQuery</h1>
+
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum numquam non, ullam, corrupti cumque similique, iure nesciunt obcaecati explicabo repudiandae!
+    </div>
+
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnToggle">Toggle</button>
+
+     <!-- jQuery -->
+
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
+    <!-- CSS jQuery -->
+    <script>
+        $("body").css({ backgroundColor: "teal", textAlign: "center"});
+        $("#box").css({
+            backgroundColor: "pink",
+            color: "black",
+            width: "600px",
+            margin: "auto",
+            border: "5px solid lime",
+        });
+        $("button").css({
+            backgroundColor: "blue",
+            color: "white",
+            padding: "8px 15px",
+            margin: "10px",
+        });
+    </script>
+
+    <script>
+        $(document).ready(function (){
+            // Hide selectors
+
+            $("#btnHide").click(function () {
+                $("#box").hide()
+                console.log("Box Hide");
+            });
+
+            // Show selectors
+
+            $("#btnShow").click(function () {
+                $("#box").show()
+                console.log("Box show");
+            });
+
+            // Toggle selectors
+
+            $("#btnToggle").click(function () {
+                $("#box").toggle()
+                console.log("Box Toggle");
+            });
+
+        });
+    </script>
+    <hr>
+    <h1>Hide Shoe Effect In jQuery</h1>
+
+    
+
+    <button id="btnFadeIn">Fade In</button>
+    <button id="btnFadeOut">Fade Out</button>
+    <button id="btnFadeToggle">Fade Toggle</button>
+
+     
+
+    <script>
+        $(document).ready(function (){
+            // Hide selectors
+
+            $("#btnFadeIn").click(function () {
+                $("#box").fadeIn()
+                console.log("Box Hide");
+            });
+
+            // Show selectors
+
+            $("#btnFadeOut").click(function () {
+                $("#box").fadeOut()
+                console.log("Box show");
+            });
+
+            // Toggle selectors
+
+            $("#btnFadeToggle").click(function () {
+                $("#box").fadeToggle()
+                console.log("Box Toggle");
+            });
+
+        })
+    </script>
+    <hr>
+    <h1>Slide Effect In jQuery</h1>
+
+
+    <button id="btnSlideUp">Slide Up</button>
+    <button id="btnSlideDown">Slide Down</button>
+    <button id="btnSlideToggle">Slide Toggle</button>
+
+     
+
+    <script>
+        $(document).ready(function (){
+            // Slide Up selectors
+
+            $("#btnSlideUp").click(function () {
+                $("#box").slideUp()
+            });
+
+            // Slide Down selectors
+
+            $("#btnSlideDown").click(function () {
+                $("#box").slideDown()
+            });
+
+            // Slide Toggle selectors
+
+            $("#btnSlideToggle").click(function () {
+                $("#box").slideToggle()
+            });
+
+        });
+    </script>
+    <hr>
+    <h1>Animate Effect In Jquery</h1>
+   
+  
+      <button id="btnAnimate">Animate</button>
+  
+      
+  
+      <script>
+        $(document).ready(function () {
+          // Animate
+          $("#btnAnimate").click(function () {
+              $("#box").animate({
+                  width: '500px',
+                  borderRadius: '20px',
+                  padding: '20px',
+                  // color: 'red'
+  
+              },3000)
+          });
+  
+       
+        });
+      </script>
+      <hr>
+      <h1>Hover Effect In jQuery</h1>
+
+
+    
+
+    <button id="btnHover">Please Hover On Me</button>
+      <!-- jQuery -->
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+      <!-- CSS jQuery -->
+
+    <script>
+
+        $("body").css({ backgroundColor: "#303030", textAlign: "center"});
+        $("#box").css({
+            backgroundColor: "pink",
+            color: "black",
+            width: "450px",
+            margin: "auto",
+            border: "4px solid lime"
+        });
+        $("button").css({
+            backgroundColor: "orange",
+            color: "black",
+            padding: "10px 30px",
+            margin: "15px",
+        });
+        $("h1").css({
+            color: "pink"
+        })
+
+    </script>
+
+    <script>
+        $("#btnHover").hover(function () {
+            $("#box").css({
+                width: '500px',
+                borderRadius: '20px',
+                padding: '20px',
+                color: 'khaki',
+                backgroundColor: 'brown'
+
+            })
+        });
+
+
+    </script>
+
+</body>
+</html>
